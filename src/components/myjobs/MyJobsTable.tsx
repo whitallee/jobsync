@@ -132,7 +132,8 @@ function MyJobsTable({
                       className={cn(
                         "w-[70px] justify-center",
                         job.Status?.value === "applied" && "bg-cyan-500",
-                        job.Status?.value === "interview" && "bg-green-500"
+                        job.Status?.value === "interview" && "bg-green-500",
+                        job.Status?.value === "rejected" && "bg-gray-200 text-gray-600"
                       )}
                     >
                       {job.Status?.label}
