@@ -133,7 +133,8 @@ function MyJobsTable({
                         "w-[70px] justify-center",
                         job.Status?.value === "applied" && "bg-cyan-500",
                         job.Status?.value === "interview" && "bg-green-500",
-                        job.Status?.value === "rejected" && "bg-gray-200 text-gray-600"
+                        job.Status?.value === "rejected" && "bg-gray-600 text-white",
+                        job.Status?.value === "archived" && "bg-gray-600 text-white"
                       )}
                     >
                       {job.Status?.label}
